@@ -13,18 +13,3 @@ If-None-Match: "2ca-596bc33423538" // ??? (ме онмхлюч)
 If-Modified-Since: Thu, 07 Nov 2019 06:59:01 GMT 
 //сяоеьмн днярюбхр пеяспя, еякх нм ашк хглемем оняке 7 мнъапъ 6:59
 
-ogat?mr?╖Eji@.EA?t╘woAPD=╥O PDQ]GET /wireshark-labs/HTTP-wireshark-file4.html HTTP/1.1
-Host: gaia.cs.umass.edu // уняр
-Connection: keep-alive // онярнъммне янедхмемхе HTTP, блеярн нрйпшрхъ мнбнцн
-Cache-Control: max-age=0 // йнккхвеярбн яейсмд дн хяревемхъ япнйю = 0
-Upgrade-Insecure-Requests: 1 // яхцмюк яепбепс, врн йкхемр унвер онксвхрэ гюьхтпнбюммши нрбер
-User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
-// хмтнплюжхъ н ноепюжхнммни яхяреле, мюгбюмхъ х бепяхъ опхкнфемхъ
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3 
-// тнплюр дюммшу, йнрнпше апюсгеп лнфер опхмърэ
-Accept-Encoding: gzip, deflate // рхо яфюрхъ
-Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7 // гюдюммше ъгшйх 
-If-None-Match: "2ca-596bc33423538" // ??? (ме онмхлюч)
-If-Modified-Since: Thu, 07 Nov 2019 06:59:01 GMT 
-//сяоеьмн днярюбхр пеяспя, еякх нм ашк хглемем оняке 7 мнъапъ 6:59
-
