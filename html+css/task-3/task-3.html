@@ -10,9 +10,7 @@
 
 <header>
 	<h1>МОИ ДОСТИЖЕНИЯ</h1>
-</header>
-
-<svg id="ellipsesvg" height="140" width="200">
+	<svg id="ellipsesvg" height="140" width="200">
 			<defs>
 				<linearGradient id="gradsvg" x1="0%" y1="0%" x2="100%" y2="0%">
 					<stop offset="0%" style="stop-color:#FF0000; opacity:"1"/>
@@ -22,20 +20,17 @@
 			<ellipse cx="100" cy="70" rx="85" ry="65" fill="url(#gradsvg)"/> 
 			<text style="font-family:Comic Sans MS, sans-serif; font-weight: 700; font-size: 40px; text-align: center" x="50" y="86"> Рома </text>
 		</svg>
-	
+</header>
+
 <nav>
 	<h2><a href="#info">Общая информация</a></h2>
-	<progress value="20">20</progress>
 	<h2><a href="#study">Учеба</a></h2>
-	<progress value="40"></progress>
 	<h2><a href="#work">Работа</a></h2>
-	<progress value="60"></progress>
 	<h2><a href="#sport">Спорт</a></h2>
-	<progress value="80"></progress>
 	<h2><a href="#hobby">Хобби</a></h2>
-	<progress value="100"></progress>
 </nav>
 
+<div id="content-high-level">
 <article>
 	<h3><a name="info">Общая информация</a></h3>
 	<figure>
@@ -44,7 +39,7 @@
 	</figure>
 	
 Цахло Роман Сергеевич <br>
-24 года <br>
+<time>24 года</time>
 <time datetime="1995-12-01">1 декабря 1995</time> <br>
 г.Бровары <br>
 <address>roma_tsakhlo@ukr.net</address>
@@ -72,31 +67,49 @@
 <mark>2016</mark> Детский массажист
 <mark>2018-2019</mark> Фармацевт
 </article>
+</div>
 
+<div id="content-low-level">
 <article>
 	<h3><a name="sport">Спорт</a></h3>
 	<figure>
 		<img src="img/sport.jpg" alt="спорт">
 		<figcaption>Inteligent Jiu-Jitsu</figcaption>
 	</figure>
-<mark>Синий пояс по бразильскому джиу-джитсу </mark> <br>
+Синий пояс <br>
+Бразильское джиу-джитсу<br>
 Команда <mark> Intelligent Jiu-Jitsu Academy </mark> <br>
-(стаж 4 года, тренерская деятельность 1,5 года) <br>
+</article>
+
+<article id="video">
+	<h3>Intelligent</h3>
+	<video controls="controls" poster="img/intelligent.jpg"> <source src="video/Intelligent.mp4"> </video>
 </article>
 
 <article>
 	<h3><a name="hobby">Хобби</a></h3>
 	<figure>
 		<img src="img/hobby.jpg" alt="хобби">
-		<figcaption>Вышивка "схема кровообращения у плода"</figcaption>
+		<figcaption>"Лимфатический узел"</figcaption>
 	</figure>
-	<mark>Языки:</mark> английский, португальский, испанский <br>
-	<mark>Хобби:</mark> вышивка крестом <br>
+	<mark>Языки:</mark> английский<br>
+	португальский<br>
+	испанский
+	<mark>Хобби:</mark> вышивка крестиком <br>
 </article>
+</div>
 
 <footer>
-	
+	<form action="#" method="post" autocomplete="off" enctype="text/plane" id="form">
+				<span id="connect-form"> Для связи со мной: </span> <br>
+				<label> имя <br>
+				<input class="data-user" type="text" autofocus required placeholder="Роман" maxlength="50" /></label> <br>
+				<label>e-mail <br>
+				<input class="data-user" type="email" required placeholder="user@..."/></label> <br>
+				<label>телефон <br>
+				<input class="data-user" type="phone" required placeholder="+38-0XX-XXX-XX-XX" pattern="[\+]\d{2}[\-]\d{3}[\-]\d{3}[\-]\d{2}[\-]\d{2}" title="введите в указанном формате"/></label> <br>
+				<input id="submit" type="submit" value="Связаться"/>
+			</form>
 </footer>
-
 </body>
 </html>

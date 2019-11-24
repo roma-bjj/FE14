@@ -1,3 +1,134 @@
+/*General features*/
+
+body {
+	background: linear-gradient(100deg,black 30%, #2B2923 70%);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 1%;
+	padding: 10px;
+	font-size: 20px;
+	font-family: Comic Sans MS, sans-serif;
+	color: #B6BBA0;
+	cursor: default;
+}
+
+@keyframes beating {
+		0% {transform: scale(1);}
+		50% {transform: scale(1.1);}
+		100% {transform: scale(1);}
+	}
+
+/*All features for <header> */
+
+header{
+	display: flex;
+	align-self: center;
+	justify-content: space-around;
+	background: linear-gradient(100deg,red 30%, #6E0000 70%);
+	border: 2px outset #CC0000;
+	border-radius: 50px;
+	font-size: 2.0em;
+	color: black;
+}
+
+#ellipsesvg {
+	display: flex;
+	align-self: center;
+	animation: infinite 5s beating;
+}
+
+/*All features for <nav> */
+
+nav > h2 > a {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+nav > h2 > a:hover {
+	transition: color 2s;
+	color: #888888;
+}
+
+/* All features for <article> */
+
+div#content-high-level {
+	display: flex;
+	justify-content: space-around;
+}
+
+div#content-low-level {
+	display: flex;
+	justify-content: space-around;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(100deg,red 30%, black 70%);
+	margin: 1em 1em 2em 1em;
+	padding: 1em 0.4em 1.1em 0.4em;
+	border: 2px inset #CC0000;
+	border-radius: 50px;
+}
+
+article:hover {
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+h3 {
+	font-size: 1.1em;
+	color: black; 
+}
+
 img {
-	height: 200px
+	height: 300px;
+	width: 230px;
+	border-radius: 5px;
+}
+
+video {
+	padding-top: 5em;
+	width: 90%;
+	border-radius: 5px;
+}
+
+figcaption {
+	font-size: 0.6em;
+	color: black;
+}
+
+mark {
+	background: linear-gradient(100deg,#515347 30%,#8D917C 70%);
+	opacity: 0.8;
+	color: black;
+}
+
+/* All features for <form> */
+
+form {
+	font-size: 1.2em;
+} 
+
+span#connect-form {
+	color: red;
+}
+
+.data-user {
+	background: linear-gradient(100deg,#515347 30%,#8D917C 70%); 
+	border: 2px outset red;
+	border-radius: 10px;
+	font-size: 1.1em;
+	color: black;
+}
+
+#submit {
+	background: linear-gradient(100deg,#515347 30%,#8D917C 70%); 
+	border: 1px inset #515347;
+	border-radius: 10px; 
+	color: black;
 }
