@@ -1,4 +1,13 @@
+body {
+  text-align: center;
+}
+
 /* Styles for <nav> */
+
+nav {
+  display: flex;
+  justify-content: center;
+}
 
 ul {
  	margin: 0;
@@ -7,7 +16,7 @@ ul {
 }
 
 ul {
-	background-image: linear-gradient(to right, #186EF7, #1317F7);
+	  background-image: linear-gradient(to right, #186EF7, #1317F7);
   	border-width: 2px;
   	border-style: solid;
   	border-color: #f5f5f5 #e5e5e5 #ccc;
@@ -22,7 +31,7 @@ ul li {
 }
 
 ul a {
-	padding: .7em 1em .7em 2em;
+	  padding: .7em 1em .7em 2em;
     float: left;
     text-decoration: none;
     color: white;
@@ -36,7 +45,7 @@ ul a.current {
 }
 
 ul li:first-child a {
-	padding-left: 1em;
+	  padding-left: 1em;
   	border-radius: 5px 0 0 5px;
 }
 
@@ -84,16 +93,87 @@ ul .current::before{
   background-image: linear-gradient(to right, #186EF7, #1317F7);
 }
 
-/* Styles for radio */
-
-#chooseradio {
-}
+/* Styles for "radio" */
 
 input {
-  border: 2px solid green;
+  display: none;
 }
 
-input:checked {
-  border: 2px solid green;
-  color: green;
+label {
+  display: flex;
+  justify-content: center;
+  margin: 3em;
+}
+
+i.radio {
+  display: block;
+  position: relative;
+  width: 2em;
+  height: 2em;
+  border: .3em outset green;
+  border-radius: 50%;
+}
+
+i.radio:before {
+  content: "";
+  position: absolute;
+  top: 0.3em; 
+  bottom: 0.3em;
+  left: 0.3em;
+  right: 0.3em;
+  background-color: green;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+input[type="radio"]:checked+i.radio:before {
+  opacity: 1.0;
+  transition: 2s;
+} 
+
+/* Styles for "checkbox" */
+
+i.checkbox {
+  display: block;
+  position: relative;
+  width: 6em;
+  height: 3em;
+  border: .1em outset gray;
+  border-radius: 2em;
+  z-index: 1;
+}
+
+i.checkbox:before {
+  content: "";
+  position: absolute;
+  top: 0.3em; 
+  bottom: 0.3em;
+  left: 0.4em;
+  border: 1em solid black;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked+i.checkbox:before {
+  left: 3.6em;
+  transition: 1s;
+} 
+
+i.checkbox:after {
+  content: "";
+  position: absolute;
+  top: 0.3em; 
+  bottom: 0.3em;
+  left: 0.4em;
+  right: 0.4em;
+  border: 1em solid green;
+  border-radius: 1em;
+  background: green;
+  opacity: 0.0;
+  z-index: 0;
+}
+
+input[type="checkbox"]:checked+i.checkbox:after {
+  opacity: 0.4;
+  z-index: 0;
+  transition: 3.5s;
 }
