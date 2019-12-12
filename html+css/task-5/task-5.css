@@ -1,0 +1,183 @@
+/* General styles */
+
+@font-face {
+    font-family: "Geometria";
+    src: url("fons/Geometria-Medium.eot") format("eot"), 
+    url("fons/Geometria-Medium.woff") format("woff"),
+    url("fons/Geometria-Medium.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@keyframes emblem {
+	0% {transform: scale(1);}
+	50% {transform: scale(1.1);}
+	100% {transform: scale(1);}
+}
+
+body {
+	background: radial-gradient(circle, #272727 2%, black 98%); 
+	background-size: 100%; 
+	cursor: default;
+	color: white;
+}
+
+/* Styles for <header> */
+
+header {
+	background: linear-gradient(to right, #3658D0 40%, #00007E 60%);
+	border-radius: 2em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: "Geometria";
+	font-size: 5em;
+	color: black;
+	box-shadow: inset 2px 2px 2px 2px blue;
+
+}
+
+svg#emblem {
+	margin-top: .3em;
+	animation: emblem 5s infinite;
+}
+
+/*Styles for <nav>*/ 
+
+/* nav {
+	
+}
+
+ul {
+	display: grid;
+	grid-template-areas: 
+	"li li li li";
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 3vw;
+	grid-column-gap: 2vw;
+	background: linear-gradient(to right, #3658D0 40%, #00007E 60%);
+	box-shadow: inset 2px 2px 2px 2px blue;
+  	border-radius: 2em;
+	box-shadow: inset 2px 2px 2px 2px blue;
+  	overflow: hidden;
+  	width: 100%;
+	list-style: none;
+}
+
+li.head-level {
+	
+}
+
+li.second-level>a {
+	display: subgrid;
+	grid-template-areas: 
+	"li" 
+	"li"
+	"li"
+	"li"
+	"li"
+	"li"
+	"li"
+	"li";
+	grid-template-columns: 1 1fr;
+	grid-row-gap: 1vw;
+	grid-column-gap: 1vw;
+	text-decoration: none;
+	color: white;
+}
+
+*/
+
+li {
+	list-style: none;
+}
+
+.menu ul li {
+	padding: 1em;
+}
+
+.menu ul li:hover {
+	background: linear-gradient(to right, #C3D2D2 40%, #8A9999 60%);
+}
+
+.menu ul ul li:hover {
+background: linear-gradient(to right, #3658D0 40%, #00007E 60%);
+}
+
+.menu ul li, .menu ul {
+	display: inline-block;
+}
+
+.menu ul {
+	position: relative;
+	left: 4%;
+	background: linear-gradient(to right, #3658D0 40%, #00007E 60%);
+  	border-radius: .5em;
+  	width: 90%;
+}
+
+.menu ul a {
+	font-size: 1.5em;
+	font-weight: 400;
+	color: black;
+	text-decoration: none;
+}
+
+.menu ul ul {
+	display: none;
+	position: absolute;
+	background: linear-gradient(to right, #C3D2D2 40%, #8A9999 60%);
+	margin: 1em;
+	padding: .1em;
+	width: 20%;
+}
+
+.menu ul ul {
+	background-color: black;
+}
+
+.menu li:hover ul {
+	display: block;
+}
+
+.menu li:hover li {
+	display: block;
+}
+
+.menu ul ul a {
+	color: black;
+	text-decoration: none;
+}
+
+/* Styles for main block */
+
+p {
+	font-family: Comic Sans MS;
+	font-size: 1em;
+}
+
+/* Styles for article#info-for-health */
+
+article#info-for-health {
+	display: grid;
+	grid-template-areas: 
+	"div div div" 
+	"div div div"
+	"div div div";
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 3vw;
+	grid-column-gap: 2vw;
+}
+
+div.health {
+	background: linear-gradient(to right, #C3D2D2 40%, #8A9999 60%);
+	padding: 2em;
+	border: .2em inset blue;
+	border-radius: 1em;
+	color: black;
+}
+
+h2>a {
+	color: #00007E;
+}
+
